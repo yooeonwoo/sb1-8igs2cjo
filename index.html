@@ -1,104 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cure Booster - Ocean Life Protection</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>OceanVerse Meets Apple - 해양 생태계 보호</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=SF+Pro+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="logo">Cure Booster</div>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="nav">
-        <a href="#hero">Home</a>
-        <a href="#save">Save</a>
-        <a href="#steps">Steps</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main class="wrapper">
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      <canvas id="three-canvas"></canvas>
-      <div class="hero__content">
-        <h1 class="hero__title">Protect Our Oceans</h1>
-        <p class="hero__subtitle">Where Science Saves Lives</p>
-      </div>
-    </section>
-
-    <!-- Save Our Planet Section -->
-    <section id="save" class="save section">
+  <div id="root">
+    <!-- Header -->
+    <header class="header">
       <div class="container">
-        <h2>Save Our Planet</h2>
-        <div class="save__grid">
-          <div class="save__item" data-speed="0.1">
-            <h3>DNA Collection</h3>
-            <p>Gathering genetic information from marine life</p>
-          </div>
-          <div class="save__item" data-speed="0.2">
-            <h3>RNA Synthesis</h3>
-            <p>Creating protective molecular structures</p>
-          </div>
-          <div class="save__item" data-speed="0.3">
-            <h3>Cell Enhancement</h3>
-            <p>Improving cellular resistance</p>
+        <div class="logo">OceanVerse</div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav">
+          <a href="#hero">홈</a>
+          <a href="#save">보호활동</a>
+          <a href="#steps">프로세스</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="wrapper">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section">
+        <canvas id="three-canvas"></canvas>
+        <div class="hero__content">
+          <h1 class="hero__title">바다를 지켜주세요</h1>
+          <p class="hero__subtitle">과학이 생명을 구하는 곳</p>
+          <a href="#save" class="hero__cta">자세히 알아보기</a>
+        </div>
+      </section>
+
+      <!-- Save Our Planet Section -->
+      <section id="save" class="save section">
+        <div class="container">
+          <h2>지구를 구하는 방법</h2>
+          <div class="save__grid">
+            <div class="save__item" data-speed="0.1">
+              <div class="save__icon">🧬</div>
+              <h3>DNA 수집</h3>
+              <p>해양 생물의 유전 정보 수집하기</p>
+            </div>
+            <div class="save__item" data-speed="0.2">
+              <div class="save__icon">🔬</div>
+              <h3>RNA 합성</h3>
+              <p>보호용 분자 구조 창조하기</p>
+            </div>
+            <div class="save__item" data-speed="0.3">
+              <div class="save__icon">🦠</div>
+              <h3>세포 강화</h3>
+              <p>세포 저항력 향상시키기</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Steps Section -->
-    <section id="steps" class="steps section">
-      <div class="container">
-        <h2>Our Process</h2>
-        <div class="steps__timeline">
-          <div class="step">
-            <span class="step__number">01</span>
-            <h3>Research</h3>
-            <p>Studying marine ecosystems</p>
-          </div>
-          <div class="step">
-            <span class="step__number">02</span>
-            <h3>Development</h3>
-            <p>Creating protective solutions</p>
-          </div>
-          <div class="step">
-            <span class="step__number">03</span>
-            <h3>Implementation</h3>
-            <p>Deploying in affected areas</p>
+      <!-- Steps Section -->
+      <section id="steps" class="steps section">
+        <div class="container">
+          <h2>우리의 프로세스</h2>
+          <div class="steps__timeline">
+            <div class="step">
+              <span class="step__number">01</span>
+              <h3>연구</h3>
+              <p>해양 생태계 연구하기</p>
+              <div class="step__image-container">
+                <img src="https://images.unsplash.com/photo-1576404425489-da5c0c9370f0?q=80&w=600" alt="연구" class="step__image">
+              </div>
+            </div>
+            <div class="step">
+              <span class="step__number">02</span>
+              <h3>개발</h3>
+              <p>보호 솔루션 만들기</p>
+              <div class="step__image-container">
+                <img src="https://images.unsplash.com/photo-1581093196277-9f597578d68b?q=80&w=600" alt="개발" class="step__image">
+              </div>
+            </div>
+            <div class="step">
+              <span class="step__number">03</span>
+              <h3>구현</h3>
+              <p>영향 지역에 배포하기</p>
+              <div class="step__image-container">
+                <img src="https://images.unsplash.com/photo-1561454246-8044d9298fc5?q=80&w=600" alt="구현" class="step__image">
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="faq section">
-      <div class="container">
-        <h2>FAQ</h2>
-        <div class="faq__grid">
-          <div class="faq__item">
-            <h3>What is Cure Booster?</h3>
-            <p>Cure Booster is an innovative solution for protecting marine life through advanced biotechnology.</p>
-          </div>
-          <div class="faq__item">
-            <h3>How does it work?</h3>
-            <p>We use DNA and RNA technology to enhance cellular protection in marine organisms.</p>
+      <!-- FAQ Section -->
+      <section id="faq" class="faq section">
+        <div class="container">
+          <h2>자주 묻는 질문</h2>
+          <div class="faq__grid">
+            <div class="faq__item">
+              <h3>OceanVerse란 무엇인가요?</h3>
+              <p>OceanVerse는 첨단 생명공학을 통해 해양 생물을 보호하는 혁신적인 솔루션입니다.</p>
+            </div>
+            <div class="faq__item">
+              <h3>어떻게 작동하나요?</h3>
+              <p>DNA와 RNA 기술을 사용하여 해양 생물의 세포 보호 기능을 강화합니다.</p>
+            </div>
+            <div class="faq__item">
+              <h3>참여하려면 어떻게 해야 하나요?</h3>
+              <p>저희 API에 연결하거나 저희 앱을 다운로드하여 실시간 데이터를 확인하세요.</p>
+            </div>
+            <div class="faq__item">
+              <h3>프로젝트의 미래 계획은 무엇인가요?</h3>
+              <p>전 세계의 해양 보호 구역으로 확장하고 더 많은 종을 보호할 계획입니다.</p>
+            </div>
           </div>
         </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section id="newsletter" class="newsletter section">
+        <div class="container">
+          <h2>최신 소식 받기</h2>
+          <p>저희의 최신 연구와 개발에 대한 소식을 받아보세요.</p>
+          <form class="newsletter__form">
+            <input type="email" placeholder="이메일 주소" required>
+            <button type="submit">구독하기</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <div class="logo">OceanVerse</div>
+            <p>해양 생태계 보존을 위한 혁신적인 솔루션</p>
+          </div>
+          <div class="footer__links">
+            <h3>링크</h3>
+            <a href="#hero">홈</a>
+            <a href="#save">보호활동</a>
+            <a href="#steps">프로세스</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="footer__contact">
+            <h3>연락처</h3>
+            <p>contact@oceanverse.com</p>
+            <p>+82 10-1234-5678</p>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2023 OceanVerse. All rights reserved.</p>
+        </div>
       </div>
-    </section>
-  </main>
+    </footer>
+  </div>
 
   <script type="module" src="/main.js"></script>
 </body>

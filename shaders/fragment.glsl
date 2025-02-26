@@ -1,24 +1,20 @@
 uniform float uTime;
-uniform vec2 uResolution;
-uniform vec2 uMouse;
+uniform vec3 uColor;
 
 varying vec3 vColor;
 
 void main() {
-    // Circular particle shape
-    vec2 cxy = 2.0 * gl_PointCoord - 1.0;
-    float r = dot(cxy, cxy);
-    float delta = fwidth(r);
-    float alpha = 1.0 - smoothstep(1.0 - delta, 1.0 + delta, r);
+    // 원형 입자 형태
+    float distanceToCenter = length(gl_PointCoord - 0.5);
+    float strength = 1.0 - smoothstep(0.0, 0.5, distanceToCenter);
     
-    // Color variation
-    vec3 color = vColor;
-    color += sin(uTime) * 0.2;
-    color += vec3(0.1, 0.2, 0.3) * length(uMouse);
+    // 글로우 효과
+    vec3 color = mix(vec3(0.0), vColor * uColor, strength);
     
-    // Glow effect
-    float glow = exp(-r * 4.0);
-    color += glow * vec3(0.1, 0.2, 0.3);
+    // 시간에 따른 깜빡임 효과
+    float pulse = 0.5 + 0.5 * sin(uTime * 0.5 + vColor.r * 10.0);
+    color *= 0.8 + 0.2 * pulse;
     
-    gl_FragColor = vec4(color, alpha * 0.8);
+    // 최종 색상
+    gl_FragColor = vec4(color, strength * 0.7);
 }
