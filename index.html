@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cure Booster - Ocean Life Protection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">Cure Booster</div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="#hero">Home</a>
+        <a href="#save">Save</a>
+        <a href="#steps">Steps</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="wrapper">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <canvas id="three-canvas"></canvas>
+      <div class="hero__content">
+        <h1 class="hero__title">Protect Our Oceans</h1>
+        <p class="hero__subtitle">Where Science Saves Lives</p>
+      </div>
+    </section>
+
+    <!-- Save Our Planet Section -->
+    <section id="save" class="save section">
+      <div class="container">
+        <h2>Save Our Planet</h2>
+        <div class="save__grid">
+          <div class="save__item" data-speed="0.1">
+            <h3>DNA Collection</h3>
+            <p>Gathering genetic information from marine life</p>
+          </div>
+          <div class="save__item" data-speed="0.2">
+            <h3>RNA Synthesis</h3>
+            <p>Creating protective molecular structures</p>
+          </div>
+          <div class="save__item" data-speed="0.3">
+            <h3>Cell Enhancement</h3>
+            <p>Improving cellular resistance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section id="steps" class="steps section">
+      <div class="container">
+        <h2>Our Process</h2>
+        <div class="steps__timeline">
+          <div class="step">
+            <span class="step__number">01</span>
+            <h3>Research</h3>
+            <p>Studying marine ecosystems</p>
+          </div>
+          <div class="step">
+            <span class="step__number">02</span>
+            <h3>Development</h3>
+            <p>Creating protective solutions</p>
+          </div>
+          <div class="step">
+            <span class="step__number">03</span>
+            <h3>Implementation</h3>
+            <p>Deploying in affected areas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq__grid">
+          <div class="faq__item">
+            <h3>What is Cure Booster?</h3>
+            <p>Cure Booster is an innovative solution for protecting marine life through advanced biotechnology.</p>
+          </div>
+          <div class="faq__item">
+            <h3>How does it work?</h3>
+            <p>We use DNA and RNA technology to enhance cellular protection in marine organisms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
